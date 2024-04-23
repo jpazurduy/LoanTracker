@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F07965A2BAB31A9007F431D /* AddLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0796592BAB31A9007F431D /* AddLoanViewModel.swift */; };
+		7F0796702BAB8CBB007F431D /* Payment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F07966C2BAB8CBB007F431D /* Payment+CoreDataClass.swift */; };
+		7F0796712BAB8CBB007F431D /* Payment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F07966D2BAB8CBB007F431D /* Payment+CoreDataProperties.swift */; };
+		7F0796722BAB8CBB007F431D /* Loan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F07966E2BAB8CBB007F431D /* Loan+CoreDataClass.swift */; };
+		7F0796732BAB8CBB007F431D /* Loan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F07966F2BAB8CBB007F431D /* Loan+CoreDataProperties.swift */; };
+		7F0796772BAB97F8007F431D /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0796762BAB97F8007F431D /* LoanCell.swift */; };
+		7F0796792BAB9B31007F431D /* PaymentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0796782BAB9B31007F431D /* PaymentsView.swift */; };
+		7F154E072BD2DA5A0085EA16 /* PaymentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F154E062BD2DA5A0085EA16 /* PaymentSection.swift */; };
+		7F154E0A2BD57FAF0085EA16 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F154E092BD57FAF0085EA16 /* Date.swift */; };
+		7F23172A2BBE43BC00E6567F /* AddPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2317292BBE43BC00E6567F /* AddPaymentView.swift */; };
+		7F23172C2BBE447700E6567F /* AddPaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23172B2BBE447700E6567F /* AddPaymentViewModel.swift */; };
+		7F23172F2BBE536400E6567F /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F23172E2BBE536400E6567F /* Destination.swift */; };
+		7F2317312BBE6C7100E6567F /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2317302BBE6C7100E6567F /* PaymentViewModel.swift */; };
+		7F35F40C2BA9E34100BA0865 /* LoanTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F40B2BA9E34100BA0865 /* LoanTrackerApp.swift */; };
+		7F35F40E2BA9E34100BA0865 /* AllLoansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F40D2BA9E34100BA0865 /* AllLoansView.swift */; };
+		7F35F4102BA9E34300BA0865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F35F40F2BA9E34300BA0865 /* Assets.xcassets */; };
+		7F35F4132BA9E34300BA0865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F35F4122BA9E34300BA0865 /* Preview Assets.xcassets */; };
+		7F35F4152BA9E34300BA0865 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F4142BA9E34300BA0865 /* Persistence.swift */; };
+		7F35F4182BA9E34300BA0865 /* LoanTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F4162BA9E34300BA0865 /* LoanTracker.xcdatamodeld */; };
+		7F35F4222BA9E34400BA0865 /* LoanTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F4212BA9E34400BA0865 /* LoanTrackerTests.swift */; };
+		7F35F42C2BA9E34400BA0865 /* LoanTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F42B2BA9E34400BA0865 /* LoanTrackerUITests.swift */; };
+		7F35F42E2BA9E34400BA0865 /* LoanTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F42D2BA9E34400BA0865 /* LoanTrackerUITestsLaunchTests.swift */; };
+		7F35F43B2BA9EEBA00BA0865 /* AddLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F43A2BA9EEBA00BA0865 /* AddLoanView.swift */; };
+		7FE085E32BD6CC95000B1568 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE085E22BD6CC95000B1568 /* Calendar.swift */; };
+		7FEC12D12BC2BA8800D06FD4 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC12D02BC2BA8800D06FD4 /* ProgressBarView.swift */; };
+		7FEC12D32BC2BAC300D06FD4 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC12D22BC2BAC300D06FD4 /* Progress.swift */; };
+		7FFB4DE52BBF67560044AF72 /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB4DE42BBF67560044AF72 /* PaymentCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F35F41E2BA9E34400BA0865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F35F4002BA9E34100BA0865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F35F4072BA9E34100BA0865;
+			remoteInfo = LoanTracker;
+		};
+		7F35F4282BA9E34400BA0865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F35F4002BA9E34100BA0865 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F35F4072BA9E34100BA0865;
+			remoteInfo = LoanTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F0796592BAB31A9007F431D /* AddLoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanViewModel.swift; sourceTree = "<group>"; };
+		7F07966C2BAB8CBB007F431D /* Payment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Payment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F07966D2BAB8CBB007F431D /* Payment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Payment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F07966E2BAB8CBB007F431D /* Loan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loan+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7F07966F2BAB8CBB007F431D /* Loan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Loan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7F0796762BAB97F8007F431D /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
+		7F0796782BAB9B31007F431D /* PaymentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsView.swift; sourceTree = "<group>"; };
+		7F154E062BD2DA5A0085EA16 /* PaymentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSection.swift; sourceTree = "<group>"; };
+		7F154E092BD57FAF0085EA16 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		7F2317292BBE43BC00E6567F /* AddPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentView.swift; sourceTree = "<group>"; };
+		7F23172B2BBE447700E6567F /* AddPaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentViewModel.swift; sourceTree = "<group>"; };
+		7F23172E2BBE536400E6567F /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		7F2317302BBE6C7100E6567F /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
+		7F35F4082BA9E34100BA0865 /* LoanTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F35F40B2BA9E34100BA0865 /* LoanTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackerApp.swift; sourceTree = "<group>"; };
+		7F35F40D2BA9E34100BA0865 /* AllLoansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLoansView.swift; sourceTree = "<group>"; };
+		7F35F40F2BA9E34300BA0865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F35F4122BA9E34300BA0865 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F35F4142BA9E34300BA0865 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7F35F4172BA9E34300BA0865 /* LoanTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoanTracker.xcdatamodel; sourceTree = "<group>"; };
+		7F35F41D2BA9E34400BA0865 /* LoanTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F35F4212BA9E34400BA0865 /* LoanTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackerTests.swift; sourceTree = "<group>"; };
+		7F35F4272BA9E34400BA0865 /* LoanTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F35F42B2BA9E34400BA0865 /* LoanTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackerUITests.swift; sourceTree = "<group>"; };
+		7F35F42D2BA9E34400BA0865 /* LoanTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F35F43A2BA9EEBA00BA0865 /* AddLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanView.swift; sourceTree = "<group>"; };
+		7FE085E22BD6CC95000B1568 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		7FEC12D02BC2BA8800D06FD4 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		7FEC12D22BC2BAC300D06FD4 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		7FFB4DE42BBF67560044AF72 /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F35F4052BA9E34100BA0865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35F41A2BA9E34400BA0865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35F4242BA9E34400BA0865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F0796632BAB8A82007F431D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F07966C2BAB8CBB007F431D /* Payment+CoreDataClass.swift */,
+				7F07966D2BAB8CBB007F431D /* Payment+CoreDataProperties.swift */,
+				7F07966E2BAB8CBB007F431D /* Loan+CoreDataClass.swift */,
+				7F07966F2BAB8CBB007F431D /* Loan+CoreDataProperties.swift */,
+				7FEC12D22BC2BAC300D06FD4 /* Progress.swift */,
+				7F154E062BD2DA5A0085EA16 /* PaymentSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F0796742BAB94C8007F431D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F35F40D2BA9E34100BA0865 /* AllLoansView.swift */,
+				7F35F43A2BA9EEBA00BA0865 /* AddLoanView.swift */,
+				7F0796762BAB97F8007F431D /* LoanCell.swift */,
+				7F0796782BAB9B31007F431D /* PaymentsView.swift */,
+				7F2317292BBE43BC00E6567F /* AddPaymentView.swift */,
+				7FFB4DE42BBF67560044AF72 /* PaymentCell.swift */,
+				7FEC12D02BC2BA8800D06FD4 /* ProgressBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F0796752BAB94DC007F431D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F0796592BAB31A9007F431D /* AddLoanViewModel.swift */,
+				7F23172B2BBE447700E6567F /* AddPaymentViewModel.swift */,
+				7F2317302BBE6C7100E6567F /* PaymentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7F154E082BD57F9C0085EA16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F154E092BD57FAF0085EA16 /* Date.swift */,
+				7FE085E22BD6CC95000B1568 /* Calendar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F23172D2BBE535700E6567F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7F154E082BD57F9C0085EA16 /* Extensions */,
+				7F23172E2BBE536400E6567F /* Destination.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7F35F3FF2BA9E34100BA0865 = {
+			isa = PBXGroup;
+			children = (
+				7F35F40A2BA9E34100BA0865 /* LoanTracker */,
+				7F35F4202BA9E34400BA0865 /* LoanTrackerTests */,
+				7F35F42A2BA9E34400BA0865 /* LoanTrackerUITests */,
+				7F35F4092BA9E34100BA0865 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F35F4092BA9E34100BA0865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F35F4082BA9E34100BA0865 /* LoanTracker.app */,
+				7F35F41D2BA9E34400BA0865 /* LoanTrackerTests.xctest */,
+				7F35F4272BA9E34400BA0865 /* LoanTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F35F40A2BA9E34100BA0865 /* LoanTracker */ = {
+			isa = PBXGroup;
+			children = (
+				7F23172D2BBE535700E6567F /* Helpers */,
+				7F0796752BAB94DC007F431D /* ViewModel */,
+				7F0796632BAB8A82007F431D /* Model */,
+				7F35F40B2BA9E34100BA0865 /* LoanTrackerApp.swift */,
+				7F0796742BAB94C8007F431D /* Views */,
+				7F35F40F2BA9E34300BA0865 /* Assets.xcassets */,
+				7F35F4142BA9E34300BA0865 /* Persistence.swift */,
+				7F35F4162BA9E34300BA0865 /* LoanTracker.xcdatamodeld */,
+				7F35F4112BA9E34300BA0865 /* Preview Content */,
+			);
+			path = LoanTracker;
+			sourceTree = "<group>";
+		};
+		7F35F4112BA9E34300BA0865 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F35F4122BA9E34300BA0865 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F35F4202BA9E34400BA0865 /* LoanTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F35F4212BA9E34400BA0865 /* LoanTrackerTests.swift */,
+			);
+			path = LoanTrackerTests;
+			sourceTree = "<group>";
+		};
+		7F35F42A2BA9E34400BA0865 /* LoanTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F35F42B2BA9E34400BA0865 /* LoanTrackerUITests.swift */,
+				7F35F42D2BA9E34400BA0865 /* LoanTrackerUITestsLaunchTests.swift */,
+			);
+			path = LoanTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F35F4072BA9E34100BA0865 /* LoanTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F35F4312BA9E34400BA0865 /* Build configuration list for PBXNativeTarget "LoanTracker" */;
+			buildPhases = (
+				7F35F4042BA9E34100BA0865 /* Sources */,
+				7F35F4052BA9E34100BA0865 /* Frameworks */,
+				7F35F4062BA9E34100BA0865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoanTracker;
+			productName = LoanTracker;
+			productReference = 7F35F4082BA9E34100BA0865 /* LoanTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F35F41C2BA9E34400BA0865 /* LoanTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F35F4342BA9E34400BA0865 /* Build configuration list for PBXNativeTarget "LoanTrackerTests" */;
+			buildPhases = (
+				7F35F4192BA9E34400BA0865 /* Sources */,
+				7F35F41A2BA9E34400BA0865 /* Frameworks */,
+				7F35F41B2BA9E34400BA0865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F35F41F2BA9E34400BA0865 /* PBXTargetDependency */,
+			);
+			name = LoanTrackerTests;
+			productName = LoanTrackerTests;
+			productReference = 7F35F41D2BA9E34400BA0865 /* LoanTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F35F4262BA9E34400BA0865 /* LoanTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F35F4372BA9E34400BA0865 /* Build configuration list for PBXNativeTarget "LoanTrackerUITests" */;
+			buildPhases = (
+				7F35F4232BA9E34400BA0865 /* Sources */,
+				7F35F4242BA9E34400BA0865 /* Frameworks */,
+				7F35F4252BA9E34400BA0865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F35F4292BA9E34400BA0865 /* PBXTargetDependency */,
+			);
+			name = LoanTrackerUITests;
+			productName = LoanTrackerUITests;
+			productReference = 7F35F4272BA9E34400BA0865 /* LoanTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F35F4002BA9E34100BA0865 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					7F35F4072BA9E34100BA0865 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					7F35F41C2BA9E34400BA0865 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 7F35F4072BA9E34100BA0865;
+					};
+					7F35F4262BA9E34400BA0865 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 7F35F4072BA9E34100BA0865;
+					};
+				};
+			};
+			buildConfigurationList = 7F35F4032BA9E34100BA0865 /* Build configuration list for PBXProject "LoanTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F35F3FF2BA9E34100BA0865;
+			productRefGroup = 7F35F4092BA9E34100BA0865 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F35F4072BA9E34100BA0865 /* LoanTracker */,
+				7F35F41C2BA9E34400BA0865 /* LoanTrackerTests */,
+				7F35F4262BA9E34400BA0865 /* LoanTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F35F4062BA9E34100BA0865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35F4132BA9E34300BA0865 /* Preview Assets.xcassets in Resources */,
+				7F35F4102BA9E34300BA0865 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35F41B2BA9E34400BA0865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35F4252BA9E34400BA0865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F35F4042BA9E34100BA0865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFB4DE52BBF67560044AF72 /* PaymentCell.swift in Sources */,
+				7F35F4152BA9E34300BA0865 /* Persistence.swift in Sources */,
+				7F0796792BAB9B31007F431D /* PaymentsView.swift in Sources */,
+				7F23172F2BBE536400E6567F /* Destination.swift in Sources */,
+				7FEC12D12BC2BA8800D06FD4 /* ProgressBarView.swift in Sources */,
+				7FEC12D32BC2BAC300D06FD4 /* Progress.swift in Sources */,
+				7F35F40E2BA9E34100BA0865 /* AllLoansView.swift in Sources */,
+				7F07965A2BAB31A9007F431D /* AddLoanViewModel.swift in Sources */,
+				7F35F4182BA9E34300BA0865 /* LoanTracker.xcdatamodeld in Sources */,
+				7F35F40C2BA9E34100BA0865 /* LoanTrackerApp.swift in Sources */,
+				7F154E072BD2DA5A0085EA16 /* PaymentSection.swift in Sources */,
+				7FE085E32BD6CC95000B1568 /* Calendar.swift in Sources */,
+				7F0796702BAB8CBB007F431D /* Payment+CoreDataClass.swift in Sources */,
+				7F23172C2BBE447700E6567F /* AddPaymentViewModel.swift in Sources */,
+				7F23172A2BBE43BC00E6567F /* AddPaymentView.swift in Sources */,
+				7F0796712BAB8CBB007F431D /* Payment+CoreDataProperties.swift in Sources */,
+				7F2317312BBE6C7100E6567F /* PaymentViewModel.swift in Sources */,
+				7F154E0A2BD57FAF0085EA16 /* Date.swift in Sources */,
+				7F0796722BAB8CBB007F431D /* Loan+CoreDataClass.swift in Sources */,
+				7F0796732BAB8CBB007F431D /* Loan+CoreDataProperties.swift in Sources */,
+				7F0796772BAB97F8007F431D /* LoanCell.swift in Sources */,
+				7F35F43B2BA9EEBA00BA0865 /* AddLoanView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35F4192BA9E34400BA0865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35F4222BA9E34400BA0865 /* LoanTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F35F4232BA9E34400BA0865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F35F42C2BA9E34400BA0865 /* LoanTrackerUITests.swift in Sources */,
+				7F35F42E2BA9E34400BA0865 /* LoanTrackerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F35F41F2BA9E34400BA0865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F35F4072BA9E34100BA0865 /* LoanTracker */;
+			targetProxy = 7F35F41E2BA9E34400BA0865 /* PBXContainerItemProxy */;
+		};
+		7F35F4292BA9E34400BA0865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F35F4072BA9E34100BA0865 /* LoanTracker */;
+			targetProxy = 7F35F4282BA9E34400BA0865 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7F35F42F2BA9E34400BA0865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F35F4302BA9E34400BA0865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F35F4322BA9E34400BA0865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LoanTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = S835D7TLF4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azurudy.LoanTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F35F4332BA9E34400BA0865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LoanTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = S835D7TLF4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azurudy.LoanTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F35F4352BA9E34400BA0865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S835D7TLF4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azurudy.LoanTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoanTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoanTracker";
+			};
+			name = Debug;
+		};
+		7F35F4362BA9E34400BA0865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S835D7TLF4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azurudy.LoanTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoanTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LoanTracker";
+			};
+			name = Release;
+		};
+		7F35F4382BA9E34400BA0865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S835D7TLF4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azurudy.LoanTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoanTracker;
+			};
+			name = Debug;
+		};
+		7F35F4392BA9E34400BA0865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S835D7TLF4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azurudy.LoanTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoanTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F35F4032BA9E34100BA0865 /* Build configuration list for PBXProject "LoanTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F35F42F2BA9E34400BA0865 /* Debug */,
+				7F35F4302BA9E34400BA0865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F35F4312BA9E34400BA0865 /* Build configuration list for PBXNativeTarget "LoanTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F35F4322BA9E34400BA0865 /* Debug */,
+				7F35F4332BA9E34400BA0865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F35F4342BA9E34400BA0865 /* Build configuration list for PBXNativeTarget "LoanTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F35F4352BA9E34400BA0865 /* Debug */,
+				7F35F4362BA9E34400BA0865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F35F4372BA9E34400BA0865 /* Build configuration list for PBXNativeTarget "LoanTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F35F4382BA9E34400BA0865 /* Debug */,
+				7F35F4392BA9E34400BA0865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F35F4162BA9E34300BA0865 /* LoanTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F35F4172BA9E34300BA0865 /* LoanTracker.xcdatamodel */,
+			);
+			currentVersion = 7F35F4172BA9E34300BA0865 /* LoanTracker.xcdatamodel */;
+			path = LoanTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F35F4002BA9E34100BA0865 /* Project object */;
+}
